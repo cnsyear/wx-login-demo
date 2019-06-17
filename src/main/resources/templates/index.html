@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"></meta>
+    <title>网页授权登陆V1.0</title>
+</head>
+<body>
+
+<h1  th:text="${message}">Hello World</h1>
+
+<script>
+    var url = 'https://open.weixin.qq.com/connect/oauth2/authorize?' +
+        'appid=wx3a1d9011d6145273&redirect_uri=http%3a%2f%2fweixin0000.free.idcfengye.com/auth' +
+        '&response_type=code&scope=snsapi_userinfo&state=STATE#wechat_redirect'
+    location.href = url;
+</script>
+</body>
+</html>
